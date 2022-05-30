@@ -23,7 +23,10 @@ const BankList = () => {
 
   return (
     <div>
-      <input onChange={(event) => setDepNum(event.target.value)} />
+      <input
+        onChange={(event) => setDepNum(event.target.value)}
+        placeholder="numero de departement"
+      />
       <button onClick={getList}>Banques</button>
       {/* <p>{depData}</p> */}
       <ul>
